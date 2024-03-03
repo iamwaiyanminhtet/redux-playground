@@ -6,10 +6,12 @@ import { decrement, increment, incrementByAmount } from './redux-getting-start/c
 function App() {
 
   const count = useSelector(state => state.counter.value)
+  const clickTime = useSelector(state => state.clickTime)
   const dispatch = useDispatch()
 
   return (
     <>
+     <p>Button Click - {clickTime.time}</p>
      <p>{count}</p>
      <div>
       <button onClick={() => dispatch(increment())}>Increment</button>
