@@ -20,7 +20,7 @@ export const buttonClickTimeSlice = createSlice({
     builder.addCase(decrement, (state) => {
         state.time += 1;
       });
-      builder.addCase(incrementByAmount, (state) => {
+    builder.addCase(incrementByAmount, (state) => {
         state.time += 1;
       });
   }
